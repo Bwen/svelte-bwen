@@ -1,0 +1,12 @@
+
+[theme^="default"] .wrapper-select ul {
+    background-color: var(--bg-surface);
+    box-shadow: rgba(0, 0, 0, 0.05) .15em .15em .15em;
+    border: 1px solid #DDD;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+[theme^="default"] .wrapper-select ul a:hover {
+    background-color: #eee;
+}

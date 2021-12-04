@@ -1,0 +1,42 @@
+
+[theme^="default"]:root {
+    --light-step: 20%;
+
+    --ph: 218; --ps: 80%; --pl: 55%;
+    --primary: hsl(var(--ph), var(--ps), var(--pl));
+    --primary-light: hsl(var(--ph), var(--ps), calc(var(--pl) + (var(--light-step))));
+    --primary-light2: hsl(var(--ph), var(--ps), calc(var(--pl) + (var(--light-step) * 2)));
+    --primary-dark: hsl(var(--ph), var(--ps), calc(var(--pl) - var(--light-step)));
+    --primary-dark2: hsl(var(--ph), var(--ps), calc(var(--pl) - var(--light-step) * 1.5));
+    --txt-primary: #FFF;
+
+    --sh: 145; --ss: 80%; --sl: 40%;
+    --secondary: hsl(var(--sh), var(--ss), var(--sl));
+    --secondary-light: hsl(var(--sh), var(--ss), calc(var(--sl) + (var(--light-step) * 2)));
+    --secondary-dark: hsl(var(--sh), var(--ss), calc(var(--sl) - var(--light-step)));
+    --txt-secondary: #000;
+
+    --bg-background: #EEE;
+    --txt-background: #000;
+    --txt-background-light: #666;
+
+    --bg-surface: #FFF;
+    --txt-surface: #000;
+
+    --bg-surface-error: #B00020;
+    --txt-surface-error: #FFF;
+}
+
+[theme="default-dark"]:root {
+    --light-step: 13%;
+
+    --ph: 218; --ps: 80%; --pl: 25%;
+    --txt-primary: #BBB;
+
+    --bg-background: var(--primary-dark2);
+    --txt-background: #000;
+    --txt-background-light: #777;
+
+    --bg-surface: var(--primary-dark);
+    --txt-surface: #BBB;
+}

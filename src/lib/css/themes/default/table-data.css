@@ -1,0 +1,26 @@
+
+[theme^="default"] .table-data th {
+    text-align: left;
+}
+
+[theme^="default"] .table-data tbody {
+    transition: transform 1s ease-in-out;
+}
+
+[theme^="default"] .table-data tbody tr {
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #DDD;
+    transition: transform .1s ease-in-out;
+}
+
+[theme^="default-dark"] .table-data tbody tr {
+    border-color: var(--primary-dark2);
+}
+
+[theme^="default"] .table-data tr:nth-child(even) {
+    background-color: var(--bg-background);
+}
+
+[theme^="default"] .table-data td {
+}

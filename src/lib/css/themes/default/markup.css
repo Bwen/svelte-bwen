@@ -1,0 +1,80 @@
+
+[theme^="default"] a { text-decoration: underline; cursor: pointer; color: var(--secondary-dark); }
+[theme^="default"] a:link { color: var(--secondary-dark); }
+[theme^="default"] a:active { color: var(--secondary-light); }
+[theme^="default"] a:visited { color: var(--txt-background-light); }
+[theme^="default"] a:hover { text-decoration: none; }
+[theme^="default"] a sup { font-size: .65em; }
+
+[theme^="default"] q,
+[theme^="default"] blockquote {
+    margin: 0;
+    position: relative;
+
+    font-family: ui-monospace, serif;
+    font-style: italic;
+}
+
+[theme="default"] q,
+[theme="default"] blockquote {
+    color: var(--primary-dark);
+}
+
+[theme="default-dark"] q,
+[theme="default-dark"] blockquote {
+    color: var(--primary-light2);
+}
+
+[theme^="default"] blockquote:before {
+    content: '“';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.5em;
+    position: absolute;
+    left: -0.6em;
+    top: -0.45em;
+}
+
+[theme^="default"] figure {
+    position: relative;
+    margin-bottom: 2em;
+    margin-top: 1.5em;
+}
+
+[theme^="default"] figcaption {
+    position:absolute;
+    right: 0;
+    bottom: -1.25em;
+    font-style: italic;
+}
+
+[theme="default"] h1,
+[theme="default"] h2,
+[theme="default"] h3,
+[theme="default"] h4,
+[theme="default"] h5 {
+    position: relative;
+    border-bottom: 1px solid var(--bg-background);
+}
+
+[theme="default-dark"] h1,
+[theme="default-dark"] h2,
+[theme="default-dark"] h3,
+[theme="default-dark"] h4,
+[theme="default-dark"] h5 {
+    position: relative;
+    border-bottom: 1px solid var(--primary-light);
+}
+
+[theme^="default"] h1 > i,
+[theme^="default"] h2 > i,
+[theme^="default"] h3 > i,
+[theme^="default"] h4 > i,
+[theme^="default"] h5 > i {
+    line-height: 1em;
+    font-size: .75em;
+    font-weight: normal;
+    position: absolute;
+    top: 0;
+    margin-left: .25em;
+}

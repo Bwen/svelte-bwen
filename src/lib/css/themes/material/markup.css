@@ -1,0 +1,67 @@
+
+[theme^="material"] a { text-decoration: underline; cursor: pointer; color: var(--secondary-dark); }
+[theme^="material"] a:link { color: var(--secondary-dark); }
+[theme^="material"] a:active { color: var(--secondary-light); }
+[theme^="material"] a:visited { color: var(--txt-background-light); }
+[theme^="material"] a:hover { text-decoration: none; }
+[theme^="material"] a sup { font-size: .65em; }
+
+[theme^="material"] q,
+[theme^="material"] blockquote {
+    margin: 0;
+    position: relative;
+
+    font-family: ui-monospace, serif;
+    font-style: italic;
+}
+
+[theme^="material"] q,
+[theme^="material"] blockquote {
+    color: var(--primary-dark);
+}
+
+[theme^="material"] blockquote:before {
+    content: '“';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.5em;
+    position: absolute;
+    left: -0.6em;
+    top: -0.45em;
+}
+
+[theme^="material"] figure {
+    position: relative;
+    margin-bottom: 2em;
+    margin-top: 1.5em;
+}
+
+[theme^="material"] figcaption {
+    position:absolute;
+    right: 0;
+    bottom: -1.25em;
+    font-style: italic;
+}
+
+[theme^="material"] h1,
+[theme^="material"] h2,
+[theme^="material"] h3,
+[theme^="material"] h4,
+[theme^="material"] h5 {
+    position: relative;
+    border-bottom: 1px solid var(--bg-background);
+}
+
+
+[theme^="material"] h1 > i,
+[theme^="material"] h2 > i,
+[theme^="material"] h3 > i,
+[theme^="material"] h4 > i,
+[theme^="material"] h5 > i {
+    line-height: 1em;
+    font-size: .75em;
+    font-weight: normal;
+    position: absolute;
+    top: 0;
+    margin-left: .25em;
+}

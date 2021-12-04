@@ -1,0 +1,80 @@
+
+[theme="material-dark"] .app-header a .wrapper-link .icon > .off {
+    display: inline-block;
+}
+[theme="material-dark"] .app-header a .wrapper-link .icon > .on {
+    display: none;
+}
+
+[theme="material-dark"] .app-header a:hover .wrapper-link .icon > .off {
+    display: none;
+}
+[theme="material-dark"] .app-header a:hover .wrapper-link .icon > .on {
+    display: inline-block;
+}
+
+[theme^="material"] .app-header {
+    color: var(--txt-primary);
+    background-color: var(--primary);
+    box-shadow: rgba(0, 0, 0, 0.15) .15em .15em .15em;
+    border-bottom: 1px solid var(--primary-light);
+}
+[theme^="material"] .app-header .center-items a {
+    color: var(--txt-primary);
+    background-color: var(--primary);
+}
+
+[theme^="material"] .wrapper-app-header a:hover > * {
+    opacity: 50%;
+}
+
+[theme^="material"] .wrapper-app-header a:hover .icon {
+    transform: rotate(-15deg);
+}
+
+[theme^="material"] .wrapper-app-header .icon {
+    padding: .25em .45em;
+    font-size: 1.75em;
+    vertical-align: top;
+    max-width: 1.90em;
+    transition: transform .1s ease-in-out;
+}
+
+[theme^="material"][media="small"] .app-header .center-items {
+    box-shadow: rgba(0, 0, 0, 0.15) .15em -.15em .15em;
+}
+
+[theme^="material"][media="medium"] .app-header .center-items {
+    box-shadow: rgba(0, 0, 0, 0.15) .15em .15em .15em;
+}
+
+[theme^="material"] .app-header a:hover {
+    background-color: var(--primary-dark);
+}
+[theme^="material"] .app-header a > .wrapper-link > .icon + .text {
+    padding-left: 0;
+}
+
+[theme^="material"][media="small"] .app-header .center:hover .center-items,
+[theme^="material"][media="small"] .app-header .center.mobile-hover .center-items  {
+    opacity: 100%;
+    top: -14em;
+    height: 14em;
+    transition:
+        opacity .3s ease-in,
+        height .15s ease-in
+    ;
+    z-index: 100;
+}
+
+[theme^="material"][media="medium"] .app-header .center:hover > .center-items,
+[theme^="material"][media="medium"] .app-header .center.mobile-hover > .center-items {
+    opacity: 100%;
+    top: 3.5em;
+    height: auto;
+    transition:
+        opacity .3s ease-in,
+        height .15s ease-in
+    ;
+    z-index: 100;
+}

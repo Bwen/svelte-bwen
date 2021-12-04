@@ -1,0 +1,26 @@
+@import 'vars-colors.css';
+@import 'markup.css';
+@import 'app-header.css';
+
+[theme^="material"]:root {
+    --border-radius: 5px;
+}
+
+[theme^="material"][media="small"]:root { --layout-width: 100%; }
+[theme^="material"][media="medium"]:root { --layout-width: 85%; }
+[theme^="material"][media="large"]:root { --layout-width: 70em; }
+[theme^="material"][media="xlarge"]:root { --layout-width: 60em; }
+
+[theme^="material"] body {
+    color: var(--txt-background);
+    background-color: var(--bg-background);
+}
+
+[theme^="material"] main {
+    color: var(--txt-surface);
+    background-color: var(--bg-surface);
+    box-shadow: rgba(0, 0, 0, 0.05) .15em .15em .15em;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+

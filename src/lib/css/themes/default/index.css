@@ -1,0 +1,43 @@
+@import 'vars-colors.css';
+@import 'markup.css';
+@import 'app-header.css';
+@import 'form.css';
+@import 'table-data.css';
+@import 'pagination.css';
+
+[theme^="default"]:root {
+    --border-radius: 5px;
+}
+
+[theme^="default"][media="small"]:root { --layout-width: 100%; }
+[theme^="default"][media="medium"]:root { --layout-width: 85%; }
+[theme^="default"][media="large"]:root { --layout-width: 70em; }
+[theme^="default"][media="xlarge"]:root { --layout-width: 60em; }
+
+[theme^="default"] body {
+    color: var(--txt-background);
+    background-color: var(--bg-background);
+}
+
+[theme^="default"] main {
+}
+
+[theme^="default"] .page,
+[theme^="default"] .page-data {
+    box-shadow: rgba(0, 0, 0, 0.05) .15em .15em .15em;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    color: var(--txt-surface);
+    background-color: var(--bg-surface);
+    margin: auto;
+}
+
+[theme^="default"] .page {
+    width: var(--layout-width);
+    padding: 1.5em;
+}
+
+[theme^="default"] .page-data {
+    width: 60%;
+    padding: 0;
+}
